@@ -19,13 +19,13 @@ import static org.fest.assertions.Assertions.assertThat;
  * Author: Piotr Turek
  */
 public class StudentIT {
-    private Student instance;
-    private Student examStudent;
+    private AbstractStudent instance;
+    private AbstractStudent examHumanistStudent;
 
     @Before
     public void setUp() throws Exception {
-        instance = new Student(new Rubber(), new Pencil(), new LessonPaper());
-        examStudent = new Student(new Corrector(), new Pen(), new ExamPaper());
+        instance = new HumanistStudent(new Rubber(), new Pencil(), new LessonPaper());
+        examHumanistStudent = new HumanistStudent(new Corrector(), new Pen(), new ExamPaper());
     }
 
 
@@ -48,10 +48,10 @@ public class StudentIT {
         final List<String> pars = Arrays.asList("Par1", "Par2", "Par3");
 
         //when
-        examStudent.writeEssay(pars);
+        examHumanistStudent.writeEssay(pars);
 
         //then
-        final Paper paper = examStudent.getPaper();
+        final Paper paper = examHumanistStudent.getPaper();
         assertThat(paper.toString()).isEqualTo("*Par**Par**Par*");
     }
 }
