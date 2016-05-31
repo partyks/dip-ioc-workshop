@@ -10,6 +10,7 @@ public abstract class AbstractStudent implements Student {
         this.paper = paper;
     }
 
+    @Override
     public Paper getPaper() {
         return paper;
     }
