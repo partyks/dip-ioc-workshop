@@ -1,7 +1,6 @@
 package bit.ideafactory.iocworkshop.students.studentkit.paper;
 
 import bit.ideafactory.iocworkshop.students.studentkit.Paper;
-import com.google.common.base.Preconditions;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -21,13 +20,13 @@ public abstract class AbstractPaper implements Paper {
 
     @Override
     public void addParagraph(String writtenParagraph) {
-        Preconditions.checkArgument(canAccept(writtenParagraph), "Cannot accept a paragraph written this way");
+//        Preconditions.checkArgument(canAccept(writtenParagraph), "Cannot accept a paragraph written this way");
         paragraphs.add(writtenParagraph);
     }
 
     @Override
     public void updateLastParagraph(String fixedParagraph) {
-        Preconditions.checkArgument(this.atLeastOneParagraphExistAndNewOneIsAcceptable(fixedParagraph), "Cannot accept this paragraph.");
+//        Preconditions.checkArgument(this.atLeastOneParagraphExistAndNewOneIsAcceptable(fixedParagraph), "Cannot accept this paragraph.");
         paragraphs.set(paragraphs.size() - 1, fixedParagraph);
     }
 

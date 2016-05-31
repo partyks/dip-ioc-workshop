@@ -8,7 +8,7 @@ public class OurClass {
     private final Collection<Student> students;
 
     public OurClass(List<Student> students) {
-        this.students = Collections.unmodifiableCollection(students);
+        this.students = students;
     }
 
     public Map<Student, Paper> writeEssay(List<String> paragraphs) {

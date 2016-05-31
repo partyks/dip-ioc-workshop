@@ -3,4 +3,45 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="pen"
+          class="bit.ideafactory.iocworkshop.students.studentkit.writers.Pen"/>
+    <bean id="corrector"
+          class="bit.ideafactory.iocworkshop.students.studentkit.erasers.Corrector"/>
+    <bean id="pencil"
+          class="bit.ideafactory.iocworkshop.students.studentkit.writers.Pencil"/>
+
+    <bean id="examPaper" class="bit.ideafactory.iocworkshop.students.studentkit.paper.ExamPaper"
+            scope="prototype"/>
+    <bean id="lessonPaper" class="bit.ideafactory.iocworkshop.students.studentkit.paper.LessonPaper"
+            scope="prototype"/>
+
+    <bean id="humanist" class="bit.ideafactory.iocworkshop.students.HumanistStudent" scope="prototype">
+        <constructor-arg index="0" ref="corrector"/>
+        <constructor-arg index="1" ref="pencil"/>
+        <constructor-arg index="2" ref="examPaper"/>
+    </bean>
+
+    <bean id="scientific" class="bit.ideafactory.iocworkshop.students.ScientificStudent"
+          scope="prototype">
+        <constructor-arg index="0" ref="lessonPaper"/>
+        <constructor-arg index="1" ref="pencil"/>
+    </bean>
+
+    <bean id="fool" class="bit.ideafactory.iocworkshop.students.FoolStudent" scope="prototype">
+        <constructor-arg index="0" ref="examPaper"/>
+        <constructor-arg index="1" ref="pen"/>
+    </bean>
+
+    <bean id="ourClass" class="bit.ideafactory.iocworkshop.OurClass">
+        <constructor-arg>
+            <list>
+                <ref bean="humanist"/>
+                <ref bean="humanist"/>
+                <ref bean="humanist"/>
+                <ref bean="scientific"/>
+                <ref bean="fool"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
 </beans>
