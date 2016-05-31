@@ -1,8 +1,8 @@
 package bit.ideafactory.iocworkshop;
 
-import bit.ideafactory.iocworkshop.studentkit.erasers.Rubber;
-import bit.ideafactory.iocworkshop.studentkit.paper.LessonPaper;
-import bit.ideafactory.iocworkshop.studentkit.writers.Pencil;
+import bit.ideafactory.iocworkshop.studentkit.Eraser;
+import bit.ideafactory.iocworkshop.studentkit.Paper;
+import bit.ideafactory.iocworkshop.studentkit.Writer;
 
 import java.util.List;
 
@@ -10,21 +10,24 @@ import java.util.List;
  * @author Michal Partyka
  */
 public class Student {
-    private final Rubber rubber;
-    private final Pencil pencil;
-    private final LessonPaper paper;
+    private final Eraser rubber;
+    private final Writer pencil;
+    private final Paper paper;
 
-    public Student() {
-        paper = new LessonPaper();
-        rubber = new Rubber();
-        pencil = new Pencil();
+    public Student(Eraser rubber, Writer pencil, Paper paper) {
+        this.rubber = rubber;
+        this.pencil = pencil;
+        this.paper = paper;
     }
 
     public void writeEssay(List<String> paragraphs) {
         paragraphs.forEach(this::writeParagraph);
+//        for (String paragraph : paragraphs) {
+//            this.writeParagraph(paragraph);
+//        }
     }
 
-    public LessonPaper getPaper() {
+    public Paper getPaper() {
         return paper;
     }
 
