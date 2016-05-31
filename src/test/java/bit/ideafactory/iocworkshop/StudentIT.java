@@ -1,12 +1,14 @@
 package bit.ideafactory.iocworkshop;
 
-import bit.ideafactory.iocworkshop.studentkit.Paper;
-import bit.ideafactory.iocworkshop.studentkit.erasers.Corrector;
-import bit.ideafactory.iocworkshop.studentkit.erasers.Rubber;
-import bit.ideafactory.iocworkshop.studentkit.paper.ExamPaper;
-import bit.ideafactory.iocworkshop.studentkit.paper.LessonPaper;
-import bit.ideafactory.iocworkshop.studentkit.writers.Pen;
-import bit.ideafactory.iocworkshop.studentkit.writers.Pencil;
+import bit.ideafactory.iocworkshop.students.studentkit.Paper;
+import bit.ideafactory.iocworkshop.students.studentkit.erasers.Corrector;
+import bit.ideafactory.iocworkshop.students.studentkit.erasers.Rubber;
+import bit.ideafactory.iocworkshop.students.studentkit.paper.ExamPaper;
+import bit.ideafactory.iocworkshop.students.studentkit.paper.LessonPaper;
+import bit.ideafactory.iocworkshop.students.studentkit.writers.Pen;
+import bit.ideafactory.iocworkshop.students.studentkit.writers.Pencil;
+import bit.ideafactory.iocworkshop.students.AbstractStudent;
+import bit.ideafactory.iocworkshop.students.HumanistStudent;
 import org.junit.Before;
 import org.junit.Test;
 

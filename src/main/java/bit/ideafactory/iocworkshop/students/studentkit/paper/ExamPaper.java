@@ -1,4 +1,4 @@
-package bit.ideafactory.iocworkshop.studentkit.paper;
+package bit.ideafactory.iocworkshop.students.studentkit.paper;
 
 /**
  * Author: Piotr Turek

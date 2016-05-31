@@ -1,7 +1,7 @@
-package bit.ideafactory.iocworkshop;
+package bit.ideafactory.iocworkshop.students;
 
-import bit.ideafactory.iocworkshop.studentkit.Paper;
-import bit.ideafactory.iocworkshop.studentkit.Writer;
+import bit.ideafactory.iocworkshop.students.studentkit.Paper;
+import bit.ideafactory.iocworkshop.students.studentkit.Writer;
 
 import java.util.List;
 

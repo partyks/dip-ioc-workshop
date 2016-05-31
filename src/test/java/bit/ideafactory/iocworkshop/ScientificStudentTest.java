@@ -1,8 +1,9 @@
 package bit.ideafactory.iocworkshop;
 
-import bit.ideafactory.iocworkshop.studentkit.Paper;
-import bit.ideafactory.iocworkshop.studentkit.paper.LessonPaper;
-import bit.ideafactory.iocworkshop.studentkit.writers.Pen;
+import bit.ideafactory.iocworkshop.students.studentkit.Paper;
+import bit.ideafactory.iocworkshop.students.studentkit.paper.LessonPaper;
+import bit.ideafactory.iocworkshop.students.studentkit.writers.Pen;
+import bit.ideafactory.iocworkshop.students.ScientificStudent;
 import org.junit.Test;
 
 import java.util.Arrays;

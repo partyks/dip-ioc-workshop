@@ -1,6 +1,6 @@
-package bit.ideafactory.iocworkshop.studentkit.paper;
+package bit.ideafactory.iocworkshop.students.studentkit.paper;
 
-import bit.ideafactory.iocworkshop.studentkit.Paper;
+import bit.ideafactory.iocworkshop.students.studentkit.Paper;
 import com.google.common.base.Preconditions;
 
 import java.util.LinkedList;

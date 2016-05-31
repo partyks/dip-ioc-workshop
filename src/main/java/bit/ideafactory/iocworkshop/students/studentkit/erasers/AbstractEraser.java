@@ -1,6 +1,6 @@
-package bit.ideafactory.iocworkshop.studentkit.erasers;
+package bit.ideafactory.iocworkshop.students.studentkit.erasers;
 
-import bit.ideafactory.iocworkshop.studentkit.Eraser;
+import bit.ideafactory.iocworkshop.students.studentkit.Eraser;
 
 /**
  * @author Michal Partyka
